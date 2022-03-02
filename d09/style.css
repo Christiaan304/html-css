@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+div#bola{
+    background-color: red;
+    border-radius: 50%;
+    height: 100px;
+    margin: 10px;
+    width: 100px;
+}
+
+div.video{
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 60%;
+    position: relative;
+}
+
+div.video>iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.marcado{
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+.principaisformatacoes{
+    margin: auto;
+    padding: 5px;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.textoaleatorio{
+    background-color: bisque;
+}
+
+*{
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+article{
+    padding: 5px;
+}
+
+aside{
+    background-color: rgb(77, 77, 77);
+}
+
+body{
+    background-color: gray;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    padding: 4px;
+}
+
+footer >p{
+    margin: 0px;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 2px;
+    text-align: center;
+}
+
+h2{
+    margin: 0px;
+}
+
+header{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+
+nav{
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    margin: 3px;
+    text-align: center;
+}
+
+nav >a{
+    color: white;
+    font-family: 'Inconsolata', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+p{
+    margin: 3px;
+    text-align: justify;
+}
