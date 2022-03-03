@@ -78,6 +78,13 @@ main{
     padding: 15px;
 }
 
+div.image{
+    border: 1px solid black;
+    display: inline-block;
+    height: 250px;
+    width: 300px;
+}
+
 main a{
     text-decoration: none;
 }
@@ -87,7 +94,15 @@ main a:hover{
     text-decoration: underline;
 }
 
+main p{
+    text-align: justify;
+}
+
 main h1{
+    text-align: center;
+}
+
+main h2{
     text-align: center;
 }
 
@@ -98,7 +113,7 @@ aside{
     padding: 10px;
 }
 
-aside > h2{
+aside > h3{
     background-color: var(--color2);
     border-radius: 10px 10px 0px 0px;
     color: white;
