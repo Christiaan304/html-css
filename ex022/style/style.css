@@ -80,9 +80,29 @@ main{
 
 div.image{
     border: 1px solid black;
+    background-color: lightgray;
+    background-image: url(../imagens/wallpaper003.jpg);
+    border-radius: 10px;
     display: inline-block;
     height: 250px;
+    margin: 0px;
     width: 300px;
+}
+
+div#q1{
+    background-position: left top;
+}
+
+div#q2{
+    background-position: left center;
+}
+
+div#q3{
+    background-position: right bottom;
+}
+
+div#q4{
+    background-position: center center;
 }
 
 main a{
