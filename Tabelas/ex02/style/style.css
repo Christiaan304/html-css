@@ -4,7 +4,29 @@ body {
 
 table {
     border-collapse: collapse;
+    position: relative;
     width: 500px;
+}
+
+caption {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* efeito zebrado em uma tabela */
+tbody tr:nth-child(2n) { /* 2n+1, odd, even */
+    background-color: lightgray;
+}
+
+/*
+tbody > tr:nth-child(2n) {
+    background-color: gray;
+}
+*/
+
+tbody tr:hover {
+    font-size: 1.2em;   
 }
 
 td, th {
@@ -14,6 +36,7 @@ td, th {
 
 td.num {
     text-align: right;
+    width: 100px;
 }
 
 td.porcentagem {
@@ -21,6 +44,6 @@ td.porcentagem {
 }
 
 thead, tfoot {
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(87, 87, 87);
     color: white;
 }
