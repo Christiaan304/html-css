@@ -9,3 +9,33 @@ body
 {
     background-color: #ebebeb;
 }
+
+a
+{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+p{
+    text-align: justify;
+}
+
+header
+{
+    text-align: center;
+    padding: 10px 10px;
+}
+
+section
+{
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 1200px;
+    padding: 10px 10px;
+}
