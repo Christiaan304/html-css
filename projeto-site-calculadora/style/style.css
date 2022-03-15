@@ -39,3 +39,13 @@ section
     max-width: 1200px;
     padding: 10px 10px;
 }
+
+table
+{
+    margin-top: 15px;
+}
+
+th, td
+{
+    padding: 10px;
+}
