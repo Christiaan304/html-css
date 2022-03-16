@@ -2,10 +2,11 @@ let massa = document.querySelector(`input#massa_txt`)
 
 let constantes = 
 {
-    c : 299792458,
-    G : 6.67408e-11,
+    c : 299792458, /* light velocity */
+    G : 6.67408e-11, /* gravitational constant */
     pi : 3.14159,
-    hbar : 1.05457e-34,
+    hbar : 1.05457e-34, /* planck constant */
+    k : 1.38064e-23, /* boltzmann constant */
     massa_solar : 1.98847e30
 }
 
@@ -49,9 +50,19 @@ function calcular()
         res_ts.innerHTML += `${tempo_singularidade}`
 
         let res_entropy = document.querySelector(`td#res_entropy`)
-        let entropy = massa_bh ** 2 * ( 4 * constantes.pi * constantes.G / constantes.c *  constantes.hbar)
+        let entropy = massa_bh ** 2 * ( 4 * constantes.pi * constantes.G) / (constantes.c *  constantes.hbar)
         res_entropy.innerHTML += `${entropy}`
 
-        
+        let res_temperature = document.querySelector(`td#res_temperature`)
+        let kelvin = (constantes.hbar * constantes.c ** 3) / (8 * constantes.pi * constantes.G * massa_bh * constantes.k)
+        res_temperature.innerHTML += `${kelvin}`
+
+        let res_luminosity = document.querySelector(`td#res_luminosity`)
+        let luminosity = (constantes.hbar * constantes.c ** 6) / (15360 * constantes.pi * constantes.G ** 2 * massa_bh ** 2)
+        res_luminosity.innerHTML += `${luminosity}`
+
+        let res_time = document.querySelector(`td#res_time`)
+        let time = massa_bh ** 3 * ( (5120 * constantes.pi * constantes.G ** 2) / (1.8083 * constantes.hbar * constantes.c ** 4) )
+        res_time.innerHTML += `${time}`
     }
 }
