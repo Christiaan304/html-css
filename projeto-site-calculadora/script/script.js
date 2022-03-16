@@ -10,6 +10,18 @@ let constantes =
     massa_solar : 1.98847e30
 }
 
+function get_rad()
+{
+    let radunit = document.querySelector(`select#rad_unit`)
+    if ( radunit == `m` )
+    {
+        window.alert(`ffffffff`)
+    }
+    else
+        window.alert(`AU`)
+    }
+}
+
 function calcular()
 {
     if ( massa.value.length == 0 )  
@@ -20,9 +32,11 @@ function calcular()
     {
         let massa_bh = Number(massa.value) * constantes.massa_solar
 
+        /*
         let res_r = document.querySelector(`td#res_rs`)
         let raio = massa_bh * ( (2 * constantes.G) / constantes.c ** 2 )
         res_rs.innerHTML += `${raio}`
+        */
 
         let res_as = document.querySelector(`td#res_as`)
         let area_superficie = massa_bh ** 2 * ( (16 * constantes.pi * constantes.G ** 2) / constantes.c ** 4 )
