@@ -34,7 +34,7 @@ function get_rad()
     }
     else if ( value == `km` )
     {
-        var raio_km = raio / 1000
+        var raio_km = raio / 1e3
         res_rs.innerHTML += `${raio_km}`
     }
     else if ( value == `au` )
