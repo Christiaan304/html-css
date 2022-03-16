@@ -68,7 +68,12 @@
                     <tr>
                         <td>Gravidade na superfície</td>
                         <td id="res_gs" class="limpar"></td>
-                        <td>m/s²</td>
+                        <td>
+                            <select id="gravity_unit" onchange="get_gravity()">
+                                <option value="ms">m/s²</option>
+                                <option value="earth">g</option>
+                            </select>
+                        </td>
                     </tr>
 
                     <tr>
@@ -80,7 +85,13 @@
                     <tr>
                         <td>Tempo até a singularidade</td>
                         <td id="res_ts" class="limpar"></td>
-                        <td>segundo</td>
+                        <td>
+                            <select id="time_unity" onchange="get_time()">
+                                <option value="second">s</option>
+                                <option value="days">dias</option>
+                                <option value="years">anos</option>
+                            </select>
+                        </td>
                     </tr>
 
                     <tr>
@@ -92,7 +103,12 @@
                     <tr>
                         <td>Temperatura</td>
                         <td id="res_temperature" class="limpar"></td>
-                        <td>Kelvin</td>
+                        <td>
+                            <select id="temperature" onchange="get_temperature()">
+                                <option value="celsius">°C</option>
+                                <option value="kelvin">K</option>   
+                            </select>
+                        </td>
                     </tr>
 
                     <tr>
@@ -118,6 +134,6 @@
 
     </footer>
 
-    <script src="script/script.js"></script>
+    <script src="script/script.js" defer></script>
 </body>
 </html>

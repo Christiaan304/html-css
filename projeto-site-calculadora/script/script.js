@@ -6,7 +6,7 @@ var constantes =
     hbar : 1.05457e-34, /* planck constant */
     k : 1.38064e-23, /* boltzmann constant */
     au : 149597870700,
-    massa_solar : 1.98847e30
+    massa_solar : 1.98847e30,
 }
 
 var massa = document.querySelector(`input#massa_txt`)
@@ -64,46 +64,78 @@ function get_surface()
     }
 }
 
+function get_gravity()
+{
+    var select = document.querySelector(`select#gravity_unity`)
+    var value = select.options[select.selectedIndex].value
+
+    var surface_gravity = ( constantes.c ** 4 ) / ( 4 * Number(massa.value) * constantes.massa_solar * constantes.G )
+
+    res_gs.innerHTML = ``
+
+    if ( value == `ms` )
+    {
+        res_gs.innerHTML += `${surface_gravity}`
+    }
+    else if ( value == `earth` )
+    {
+        var surface_gravity_earth = surface_gravity / 9.806
+        res_gs.innerHTML += `${surface_gravity_earth}`
+    }
+}
+
+function get_time()
+{
+    var select = document.querySelector(`select#time_unity`)
+    var value = select.options[select.selectedIndex].value
+
+    var seconds = ( Number(massa.value) * constantes.massa_solar ) * ( constantes.pi * constantes.G / constantes.c ** 3 )
+
+    res_ts.innerHTML = ``
+
+    if ( value == `second` )
+    {
+        res_ts.innerHTML += `${seconds}`
+    }
+    else if ( value == `days` )
+    {
+        var days = seconds / 86400
+        res_ts.innerHTML += `${days}`
+    }
+    else if ( value == `years` )
+    {
+        var years = seconds / 31536000
+        res_ts.innerHTML += `${years}`
+    }
+}
+
+function get_temperature()
+{
+    var select = document.querySelector(`select#temperature`)
+    var value = select.options[select.selectedIndex].value
+
+    var temperature = ( constantes.hbar * constantes.c ** 3 ) / ( 8 * constantes.pi * constantes.k * constantes.G * Number(massa.value) * constantes.massa_solar )
+
+    res_temperature.innerHTML = ``
+
+    if ( value == `celsius` )
+    {
+        res_temperature.innerHTML += `${temperature}`
+    }
+    else if ( value == `kelvin` )
+    {
+        var kelvin = temperature / 273.15
+        res_temperature.innerHTML += `${kelvin}`
+    }
+}
+
 function calcular()
 {
-    if ( massa.value.length == 0 )  
-    {
-        window.alert(`[ERRO] Digite o valor da massa`)
-    }
-    else
-    {
-        var massa_bh = Number(massa.value) * constantes.massa_solar
+    res_entropy.innerHTML = ``
+    var entropy = ( Number(massa.value) * constantes.massa_solar ) ** 2 * ( (4 * constantes.pi * constantes.G) / ( constantes.hbar * constantes.c ) )
+    res_entropy.innerHTML += `${entropy}`
 
-        var res_density = document.querySelector(`td#res_density`)
-        var densidade =  (3 * constantes.c ** 6) / (32 * constantes.pi * constantes.G ** 3 * massa_bh ** 2)
-        res_density.innerHTML += `${densidade}`
-
-        var res_gs = document.querySelector(`td#res_gs`)
-        var gravidade_superficie = (constantes.c ** 4) / (4 * constantes.G * massa_bh)
-        res_gs.innerHTML += `${gravidade_superficie}`
-
-        var res_st = document.querySelector(`td#res_st`)
-        var mare = (constantes.c ** 6) / (4 * constantes.G ** 2 * massa_bh ** 2)
-        res_st.innerHTML += `${mare}`
-
-        var res_ts = document.querySelector(`td#res_ts`)
-        var tempo_singularidade = massa_bh * ( constantes.pi * constantes.G / constantes.c ** 3 )
-        res_ts.innerHTML += `${tempo_singularidade}`
-
-        var res_entropy = document.querySelector(`td#res_entropy`)
-        var entropy = massa_bh ** 2 * ( 4 * constantes.pi * constantes.G) / (constantes.c *  constantes.hbar)
-        res_entropy.innerHTML += `${entropy}`
-
-        var res_temperature = document.querySelector(`td#res_temperature`)
-        var kelvin = (constantes.hbar * constantes.c ** 3) / (8 * constantes.pi * constantes.G * massa_bh * constantes.k)
-        res_temperature.innerHTML += `${kelvin}`
-
-        var res_luminosity = document.querySelector(`td#res_luminosity`)
-        var luminosity = (constantes.hbar * constantes.c ** 6) / (15360 * constantes.pi * constantes.G ** 2 * massa_bh ** 2)
-        res_luminosity.innerHTML += `${luminosity}`
-
-        var res_time = document.querySelector(`td#res_time`)
-        var time = massa_bh ** 3 * ( (5120 * constantes.pi * constantes.G ** 2) / (1.8083 * constantes.hbar * constantes.c ** 4) )
-        res_time.innerHTML += `${time}`
-    }
+    res_luminosity.innerHTML = ``
+    var luminosity = ( constantes.hbar * constantes.c ** 6 ) / ( 15360 * constantes.pi * constantes.G ** 2 * Number(massa.value) * constantes.massa_solar )
+    res_luminosity.innerHTML += `${luminosity}`    
 }
