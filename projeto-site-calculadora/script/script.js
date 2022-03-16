@@ -33,7 +33,9 @@ function calcular()
         let densidade =  (3 * constantes.c ** 6) / (32 * constantes.pi * constantes.G ** 3 * Number(massa.value) * constantes.massa_solar ** 2)
         res_densidade.innerHTML += `${densidade}`
 
-        
+        let res_gs = document.querySelector(`td#res_gs`)
+        let gravidade_superficie = (constantes.c ** 4) / (4 * constantes.G * Number(massa.value) * constantes.massa_solar)
+        res_gs.innerHTML += `${gravidade_superficie}`
         
     }
 }
