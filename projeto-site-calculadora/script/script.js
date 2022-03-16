@@ -1,11 +1,16 @@
 let massa = document.querySelector(`input#massa_txt`)
-let res_r = document.querySelector(`div#res_r`)
 
 let constantes = 
 {
     c : 299792458,
-    massa_solar : 1.98847e30,
-    G : 6.67408e-11
+    G : 6.67408e-11,
+    pi : 3.14159,
+    massa_solar : 1.98847e30
+}
+
+function limpar()
+{
+
 }
 
 function calcular()
@@ -16,8 +21,19 @@ function calcular()
     }
     else
     {
+        let res_r = document.querySelector(`td#res_rs`)
         let raio = Number(massa.value) * constantes.massa_solar * ( (2 * constantes.G) / constantes.c ** 2 )
-        res_r.innerHTML += `${raio}`
+        res_rs.innerHTML += `${raio}`
 
+        let res_as = document.querySelector(`td#res_as`)
+        let area_superficie = Number(massa.value) * constantes.massa_solar ** 2 * ( (16 * constantes.pi * constantes.G ** 2) / constantes.c ** 4 )
+        res_as.innerHTML += `${area_superficie}`
+
+        let res_densidade = document.querySelector(`td#res_densidade`)
+        let densidade =  (3 * constantes.c ** 6) / (32 * constantes.pi * constantes.G ** 3 * Number(massa.value) * constantes.massa_solar ** 2)
+        res_densidade.innerHTML += `${densidade}`
+
+        
+        
     }
 }
