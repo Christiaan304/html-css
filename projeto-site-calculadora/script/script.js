@@ -36,6 +36,10 @@ function calcular()
         let res_gs = document.querySelector(`td#res_gs`)
         let gravidade_superficie = (constantes.c ** 4) / (4 * constantes.G * Number(massa.value) * constantes.massa_solar)
         res_gs.innerHTML += `${gravidade_superficie}`
+
+        let res_st = document.querySelector(`td#res_st`)
+        let mare = (constantes.c ** 6) / (4 * constantes.G ** 2 * (Number(massa.value) * constantes.massa_solar) ** 2)
+        res_st.innerHTML += `${mare}`
         
     }
 }
