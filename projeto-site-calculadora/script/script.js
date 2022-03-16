@@ -11,11 +11,13 @@ var constantes =
 
 var massa = document.querySelector(`input#massa_txt`)
 
+/*
 function limpar()
 {
     var clean = document.querySelector(`td.limpar`)
     clean.innerHTML = ``
 }
+*/
 
 function get_rad()
 {
