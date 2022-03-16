@@ -32,16 +32,17 @@
                 <tbody>
                     <tr>
                         <td>Massa</td>
-                        <td><input type="text" name="massa_txt" id="massa_txt"></td>
+                        <td><input type="text" name="massa_txt" id="massa_txt" onchange="calcular()" onclick="limpar()"></td>
                         <td>Massa Solar</td>
                     </tr>
 
                     <tr>
                         <td>Raio de Schwarzschild </td>
-                        <td id="res_rs"></td>
+                        <td id="res_rs" class="limpar"></td>
                         <td>
                             <select id="rad_unit" onchange="get_rad()">
                                 <option value="m">m</option>
+                                <option value="km">km</option>
                                 <option value="au">AU</option>
                             </select>
                         </td>
@@ -49,62 +50,68 @@
 
                     <tr>
                         <td>Área da superfície</td>
-                        <td id="res_as"></td>
-                        <td>Metros quadrados</td>
+                        <td id="res_as" class="limpar"></td>
+                        <td>
+                            <select id="surface_unit" onchange="get_surface()">
+                                <option value="m2">m²</option>
+                                <option value="km2">km²</option>
+                            </select>
+                        </td>
                     </tr>
 
                     <tr>
                         <td>Densidade</td>
-                        <td id="res_density"></td>
+                        <td id="res_density" class="limpar"></td>
                         <td>kg/m³</td>
                     </tr>
 
                     <tr>
                         <td>Gravidade na superfície</td>
-                        <td id="res_gs"></td>
+                        <td id="res_gs" class="limpar"></td>
                         <td>m/s²</td>
                     </tr>
 
                     <tr>
                         <td>Força de maré</td>
-                        <td id="res_st"></td>
+                        <td id="res_st" class="limpar"></td>
                         <td>m/s²/m</td>
                     </tr>
 
                     <tr>
                         <td>Tempo até a singularidade</td>
-                        <td id="res_ts"></td>
+                        <td id="res_ts" class="limpar"></td>
                         <td>segundo</td>
                     </tr>
 
                     <tr>
                         <td>Entropia</td>
-                        <td id="res_entropy"></td>
+                        <td id="res_entropy" class="limpar"></td>
                         <td><p>(sem dimensão)</p></td>
                     </tr>
 
                     <tr>
                         <td>Temperatura</td>
-                        <td id="res_temperature"></td>
+                        <td id="res_temperature" class="limpar"></td>
                         <td>Kelvin</td>
                     </tr>
 
                     <tr>
                         <td>Luminosidade nominal</td>
-                        <td id="res_luminosity"></td>
+                        <td id="res_luminosity" class="limpar"></td>
                         <td>Watts</td>
                     </tr>
 
                     <tr>
                         <td>Tempo de vida</td>
-                        <td id="res_time"></td>
+                        <td id="res_time" class="limpar"></td>
                         <td>Segundos</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <input type="button" value="Calcular" onclick="calcular()">
+        <!-- <input type="button" value="Calcular" onclick="calcular()"> -->
+        <input type="button" value="Limpar" onclick="limpar()">
     </section>
 
     <footer>
