@@ -25,6 +25,11 @@ p{
     text-align: justify;
 }
 
+section > div > p
+{
+    text-align: center;
+}
+
 header
 {
     text-align: center;
@@ -43,6 +48,7 @@ section
 table
 {
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 th, td

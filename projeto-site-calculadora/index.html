@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <script src="script/script.js"></script>
     <title>Hawking radiation calculator</title>
 </head>
 <body>
@@ -30,74 +29,62 @@
                         <th>Unidade</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <tr>
                         <td>Massa</td>
                         <td><input type="text" name="massa_txt" id="massa_txt"></td>
                         <td>Massa Solar</td>
                     </tr>
-
                     <tr>
                         <td>Raio de Schwarzschild </td>
                         <td><input type="text" name="raio_txt" id="raio_txt"></td>
                         <td>Metros</td>
                     </tr>
-
                     <tr>
                         <td>Área da superfície</td>
                         <td><input type="text" name="area_txt" id="area_txt"></td>
                         <td>Metros quadrados</td>
                     </tr>
-
                     <tr>
                         <td>Densidade</td>
                         <td><input type="text" name="densidade_txt" id="densidade_txt"></td>
                         <td>kg/m³</td>
                     </tr>
-
                     <tr>
                         <td>Gravidade na superfície</td>
                         <td><input type="text" name="gravidade_txt" id=""></td>
                         <td>m/s²</td>
                     </tr>
-
                     <tr>
                         <td>Força de maré</td>
                         <td><input type="text" name="mare_txt" id="mare_txt"></td>
                         <td>m/s²/m</td>
                     </tr>
-
                     <tr>
                         <td>Tempo até a singularidade</td>
                         <td><input type="text" name="singularidade_txt" id="singularidade_txt"></td>
                         <td>segundo</td>
                     </tr>
-
                     <tr>
                         <td>Entropia</td>
                         <td><input type="text" name="entropia_txt" id="entropia_txt"></td>
                         <td><p>(sem dimensão)</p></td>
                     </tr>
-
                     <tr>
                         <td>Temperatura</td>
                         <td><input type="text" name="temperatura_txt" id="temperatura_txt"></td>
                         <td>Kelvin</td>
                     </tr>
-
                     <tr>
                         <td>Pico comprimento de onda</td>
                         <td><input type="text" name="pico_txt" id="pico_txt"></td>
                         <td>eV</td>
                     </tr>
-
                     <tr>
                         <td>Luminosidade nominal</td>
                         <td><input type="text" name="luminosidade_txt" id="luminosidade_txt"></td>
                         <td>Watts</td>
                     </tr>
-
                     <tr>
                         <td>Tempo de vida</td>
                         <td><input type="text" name="tempo_txt" id="tempo_txt"></td>
@@ -106,10 +93,14 @@
                 </tbody>
             </table>
         </div>
+
+        <input type="button" value="Calcular" onclick="calcular()">
     </section>
 
     <footer>
 
     </footer>
+
+    <script src="script/script.js"></script>
 </body>
 </html>
