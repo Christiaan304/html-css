@@ -10,11 +10,6 @@ let constantes =
     massa_solar : 1.98847e30
 }
 
-function limpar()
-{
-
-}
-
 function calcular()
 {
     if ( massa.value.length == 0 )  
