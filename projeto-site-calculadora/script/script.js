@@ -1,24 +1,31 @@
-let massa = document.querySelector(`input#massa_txt`)
+var massa = document.querySelector(`input#massa_txt`)
 
-let constantes = 
+var constantes = 
 {
     c : 299792458, /* light velocity */
     G : 6.67408e-11, /* gravitational constant */
     pi : 3.14159,
     hbar : 1.05457e-34, /* planck constant */
     k : 1.38064e-23, /* boltzmann constant */
+    au : 1495978707,
     massa_solar : 1.98847e30
 }
 
 function get_rad()
 {
-    let radunit = document.querySelector(`select#rad_unit`)
-    if ( radunit == `m` )
+    var select = document.querySelector(`select#rad_unit`)
+    var value = select.options[select.selectedIndex].value
+
+    var raio = Number(massa.value) * constantes.massa_solar * ( (2 * constantes.G) / constantes.c ** 2 )
+    var raio_au = raio / constantes.au
+
+    if ( value == `m` )
     {
-        window.alert(`ffffffff`)
+        res_rs.innerHTML += `${raio}`
     }
-    else
-        window.alert(`AU`)
+    else if ( value == `au` )
+    {
+        res_rs.innerHTML += `${raio_au}`
     }
 }
 
@@ -30,13 +37,7 @@ function calcular()
     }
     else
     {
-        let massa_bh = Number(massa.value) * constantes.massa_solar
-
-        /*
-        let res_r = document.querySelector(`td#res_rs`)
-        let raio = massa_bh * ( (2 * constantes.G) / constantes.c ** 2 )
-        res_rs.innerHTML += `${raio}`
-        */
+        var massa_bh = Number(massa.value) * constantes.massa_solar
 
         let res_as = document.querySelector(`td#res_as`)
         let area_superficie = massa_bh ** 2 * ( (16 * constantes.pi * constantes.G ** 2) / constantes.c ** 4 )
