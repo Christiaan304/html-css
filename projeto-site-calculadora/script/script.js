@@ -61,7 +61,7 @@ function get_gravity()
     var select = document.querySelector(`select#gravity_unity`)
     var value = select.options[select.selectedIndex].value
 
-    var surface_gravity = ( constantes.c ** 4 ) / ( 4 * Number(massa.value) * constantes.massa_solar * constantes.G )
+    var surface_gravity = ( constantes.c ** 4 ) / ( 4 * ( Number(massa.value) * constantes.massa_solar ) * constantes.G )
 
     res_gs.innerHTML = ``
 
