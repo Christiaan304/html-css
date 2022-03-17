@@ -143,6 +143,14 @@ function get_lifetime()
 
 function calcular()
 {
+    res_density.innerHTML = ``
+    var density = ( 3 * constantes.c ** 6 ) / ( 32 * constantes.pi * constantes.G ** 3 * ( Number(massa.value) * constantes.massa_solar ) ** 2 )
+    res_density.innerHTML += `${density}`
+
+    res_st.innerHTML = ``
+    var surface_tides = ( constantes.c ** 6 ) / ( 4 * constantes.G ** 2 * ( Number(massa.value) * constantes.massa_solar ) ** 2 )
+    res_st.innerHTML += `${surface_tides}`
+
     res_entropy.innerHTML = ``
     var entropy = ( Number(massa.value) * constantes.massa_solar ) ** 2 * ( (4 * constantes.pi * constantes.G) / ( constantes.hbar * constantes.c ) )
     res_entropy.innerHTML += `${entropy}`
