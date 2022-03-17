@@ -11,14 +11,6 @@ var constantes =
 
 var massa = document.querySelector(`input#massa_txt`)
 
-/*
-function limpar()
-{
-    var clean = document.querySelector(`td.limpar`)
-    clean.innerHTML = ``
-}
-*/
-
 function get_rad()
 {
     var select = document.querySelector(`select#rad_unit`)
@@ -126,6 +118,26 @@ function get_temperature()
     {
         var kelvin = temperature / 273.15
         res_temperature.innerHTML += `${kelvin}`
+    }
+}
+
+function get_lifetime()
+{
+    var select = document.querySelector(`select#lifetime`)
+    var value = select.options[select.selectedIndex].value
+
+    var lifetime = ( Number(massa.value) ) ** 3 * ( (5120 * constantes.pi * constantes.G ** 2) / 1.8083 * constantes.hbar * constantes.c ** 4 )
+
+    res_time.innerHTML = ``
+
+    if ( value == `seconds` )
+    {
+        res_time.innerHTML += `${lifetime}`
+    }
+    else if ( value == `Gyears` )
+    {
+        var gyears = lifetime / 3.1536e16
+        res_time.innerHTML += `${gyears}`
     }
 }
 

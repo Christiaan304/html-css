@@ -120,7 +120,12 @@
                     <tr>
                         <td>Tempo de vida</td>
                         <td id="res_time" class="limpar"></td>
-                        <td>Segundos</td>
+                        <td>
+                            <select id="lifetime" onchange="get_lifetime()">
+                                <option value="seconds">s</option>
+                                <option value="Gyears">bilhao anos</option>
+                            </select>
+                        </td>
                     </tr>
                 </tbody>
             </table>
