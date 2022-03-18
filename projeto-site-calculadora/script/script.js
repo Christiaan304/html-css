@@ -1,4 +1,4 @@
-var constantes = 
+const constantes = 
 {
     c : 299792458, /* light velocity */
     G : 6.67408e-11, /* gravitational constant */
