@@ -8,11 +8,11 @@
     <title>Calcular IMC</title>
 </head>
 <body>
-    <div>
+    <div id="principal">
         <h2>Calculadora de IMC</h2>
             <p>
                 <strong>Altura:</strong>
-                <input type="text" name="alturatxt" id="alturatxt"> metros
+                <input type="text" name="alturatxt" id="alturatxt"> cm
             </p>
 
         <p>
@@ -20,7 +20,9 @@
             <input type="text" name="pesotxt" id="pesotxt"> kg
         </p>
 
-        <input type="button" value="Calcular">
+        <input type="button" value="Calcular" onclick="calcularIMC()">
+
+        <div id="res"></div>
     </div>
     
     <script src="script/script.js"></script>
