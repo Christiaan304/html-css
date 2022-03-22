@@ -11,18 +11,22 @@ function verificarIMC(imc)
 {
     if ( imc < 18.4 )
     {
-        console.log(`Seu imc é ${imc}, você está abaixo do peso`);
+        res.innerHTML = ``
+        res.innerHTML += `<p>Seu imc é ${imc}, você está abaixo do peso</p>`
     }
     else if ( imc < 24.9 )
     {
-        console.log(`Seu imc é ${imc}, você está com o peso normal`);
+        res.innerHTML = ``
+        res.innerHTML += `<p>Seu imc é ${imc}, você está com o peso normal</p>`
     }
     else if ( imc < 29.9 )
     {
-        console.log(`Seu imc é ${imc}, você está acima do peso`);
+        res.innerHTML = ``
+        res.innerHTML += `<p>Seu imc é ${imc}, você está acima do peso</p>`
     }
     else
     {
-        console.log(`Seu imc é ${imc}, você está obeso`);
+        res.innerHTML = ``
+        res.innerHTML += `<p>Seu imc é ${imc}, você está obeso</p>`
     }
 }
