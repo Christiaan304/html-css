@@ -1,15 +1,17 @@
-*
-{
-    margin: 0px;
-    padding: 0px;
-    font-family: var(--fonte-padrao);
-}
+@charset "UTF-8";
 
 :root
 {
     --corFundo: lightgray;
     --corPadrao: white;
     --fontePadrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrao);
 }
 
 p
@@ -32,6 +34,11 @@ section
     padding: 10px 10px;
 }
 
+section > p
+{
+    font-size: 1.1em;
+}
+
 header
 {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.33);
@@ -47,8 +54,22 @@ header > h1
 
 footer
 {
-    background-color: var(--corPadrao);
-    max-width: 1100px;
-    margin: auto;
+    background-color: var(--corFundo);
     margin-top: 10px;
+    padding: 3px;
+}
+
+footer > p
+{
+    text-align: center;
+}
+
+footer > p > a
+{
+    text-decoration: none;
+}
+
+footer > p > a:hover
+{
+    text-decoration: underline;
 }
