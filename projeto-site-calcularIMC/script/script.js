@@ -49,6 +49,14 @@ $(document).ready(function(){
         {
             alert(`[ERRO] Altura ou Peso não podem ficar vazios.`)
         }
+        else if ( peso == 0 || altura == 0 )
+        {
+            alert(`[ERRO] Altura ou Peso não podem ser zero.`)
+        }
+        else if ( isNaN(imc) )
+        {
+            alert(`[ERRO] Digite somente números.`)
+        }
         else
         {
             verificarIMC(imc)
