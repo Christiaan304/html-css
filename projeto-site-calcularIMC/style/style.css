@@ -31,6 +31,16 @@ section > h2
     padding: 10px;
 }
 
+input#alturatxt
+{
+    padding: 2px;
+}
+
+input#pesotxt
+{
+    padding: 2px;
+}
+
 input#calcular
 {
     background-color: rgb(38, 65, 143);
