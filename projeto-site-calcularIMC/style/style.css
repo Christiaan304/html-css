@@ -18,7 +18,7 @@ section
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
     margin: auto;
     margin-top: 20px;
-    max-width: 700px;
+    max-width: 500px;
     padding: 10px 10px;
 }
 
@@ -31,12 +31,7 @@ section > h2
     padding: 10px;
 }
 
-input#alturatxt
-{
-    padding: 2px;
-}
-
-input#pesotxt
+input.dados
 {
     padding: 2px;
 }
