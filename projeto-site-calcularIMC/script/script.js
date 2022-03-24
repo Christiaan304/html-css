@@ -32,12 +32,11 @@ function verificarIMC(imc)
     }
 }
 */
-
 $(document).ready(function(){
 
     $(`input#calcular`).click(function calcularIMC(){
-        let peso = $(`#pesotxt`).val() /*document.querySelector(`input#pesotxt`)*/
-        let altura = $(`#alturatxt`).val() /*document.querySelector(`input#alturatxt`)*/
+        let peso = $(`input#pesotxt`).val() /*document.querySelector(`input#pesotxt`)*/
+        let altura = $(`input#alturatxt`).val() /*document.querySelector(`input#alturatxt`)*/
         let imc = ( Number(peso) / ( Math.pow(altura / 100, 2) ) ).toFixed(2)
 
         verificarDados(peso, altura, imc)
