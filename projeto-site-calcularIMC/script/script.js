@@ -45,7 +45,7 @@ $(document).ready(function(){
 
     function verificarDados(peso, altura, imc)
     {
-        if ( peso.length == 0 || altura.length == 0 )
+        if ( peso.length == 0 || altura.length == 0)
         {
             alert(`[ERRO] Altura ou Peso não podem ficar vazios.`)
         }

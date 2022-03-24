@@ -30,3 +30,13 @@ section > h2
     margin: -10px -10px 0px -10px;
     padding: 10px;
 }
+
+input#calcular
+{
+    background-color: rgb(38, 65, 143);
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 15px;
+}
