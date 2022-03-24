@@ -63,6 +63,7 @@ footer
 footer > p
 {
     text-align: center;
+    font-size: 1.05em;
 }
 
 footer > p > a
