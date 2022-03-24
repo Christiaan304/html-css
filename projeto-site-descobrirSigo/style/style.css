@@ -37,6 +37,7 @@ section
 section > p
 {
     font-size: 1.1em;
+    padding-top: 15px;
 }
 
 header
