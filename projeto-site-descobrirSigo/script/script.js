@@ -9,7 +9,9 @@ $(document).ready(function(){
         return (dia > ultimoDia[mes]) ? zodiaco[mes + 1] : zodiaco[mes]
     }
 
-    $(``)
+    $(`select#diaNascimento`).mouseenter(function(){
+        location.reload()
+    })
 
     $(`input#descobrir`).click(function verificarSigno(){
         let signo = calcularSigno( $(`select#diaNascimento`).val(), $(`select#mesNascimento`).val() )
@@ -20,7 +22,7 @@ $(document).ready(function(){
         {
             img.src = `image/capricorn.png`
             img.alt = `imagem signo de capricórnio`
-            res.innerHTML = `Sei signo é <strong>${signo}</strong>.`
+            res.innerHTML = `Sei signo é <strong>${signo}</strong>. Pé no chão, disciplinado, trabalhador e que tem poucos, mas bons amigos.`
         }
         else if ( signo == `Aquário` )
         {
