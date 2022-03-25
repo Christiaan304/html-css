@@ -31,8 +31,12 @@ $(document).ready(function(){
         }
         else if ( signo == `Áries` )
         {
-            
-            res.innerHTML = `áries`
+            img.src = `image/aries.png`
+        }
+        else if ( signo == `Touro` )
+        {
+            img.src = `image/taurus.png`
+            res.innerHTML = `touro`
         }
     })
 })
