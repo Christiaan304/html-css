@@ -9,6 +9,8 @@ $(document).ready(function(){
         return (dia > ultimoDia[mes]) ? zodiaco[mes + 1] : zodiaco[mes]
     }
 
+    $(``)
+
     $(`input#descobrir`).click(function verificarSigno(){
         let signo = calcularSigno( $(`select#diaNascimento`).val(), $(`select#mesNascimento`).val() )
 
