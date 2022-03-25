@@ -24,32 +24,6 @@ body
     background-color: var(--corFundo);
 }
 
-section
-{
-    background-color: var(--corPadrao);
-    max-width: 1100px;
-    margin: auto;
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.33);
-    padding: 10px 10px;
-}
-
-section > p
-{
-    font-size: 1.1em;
-    padding-top: 15px;
-}
-
-input#descobrir
-{
-    background-color: rgb(38, 65, 143);
-    border: none;
-    color: white;
-    font-weight: bold;
-    margin-top: 10px;
-    padding: 10px 15px;
-}
-
 header
 {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.33);
@@ -63,9 +37,40 @@ header > h1
     padding: 5px;
 }
 
+section
+{
+    background-color: var(--corPadrao);
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.33);
+    padding: 10px 10px;
+}
+
+section > p
+{
+    font-size: 1.1em;
+    padding-top: 20px;
+}
+
 #img, #res
 {
     text-align: center;
+}
+
+#diaNascimento, #mesNascimento
+{
+    font-size: 1em;
+}
+
+input#descobrir
+{
+    background-color: rgb(38, 65, 143);
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px 15px;
 }
 
 footer

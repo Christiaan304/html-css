@@ -17,61 +17,74 @@ $(document).ready(function(){
         if ( signo == `Capricórnio` )
         {
             img.src = `image/capricorn.png`
-            res.innerHTML = `capricorn`
+            img.alt = `imagem signo de capricórnio`
+            res.innerHTML = `Sei signo é <strong>${signo}</strong>.`
         }
         else if ( signo == `Aquário` )
         {
             img.src = `image/aquarius.png`
+            img.alt = `imagem signo de aquário`
             res.innerHTML = `aquário`
         }
         else if ( signo == `Peixes` )
         {
             img.src = `image/pisces.png`
+            img.alt = `imagem signo de peixes`
             res.innerHTML = `peixe`
         }
         else if ( signo == `Áries` )
         {
             img.src = `image/aries.png`
+            img.alt = `imagem signo de áries`
             res.innerHTML = `áries`
         }
         else if ( signo == `Touro` )
         {
             img.src = `image/taurus.png`
+            img.alt = `imagem signo de touro`
             res.innerHTML = `touro`
         }
         else if ( signo == `Gêmeos` )
         {
             img.src = `image/gemini.png`
+            img.alt = `imagem signo de gêmeos`
             res.innerHTML = `Gêmeos`
         }
         else if ( signo == `Câncer` )
         {
             img.src = `image/cancer.png`
+            img.alt = `imagem signo de câncer`
             res.innerHTML = `câncer`
         }
         else if ( signo == `Leão` )
         {
             img.src = `image/leo.png`
+            img.alt = `imagem signo de leão`
             res.innerHTML = `leão`
         }
         else if ( signo == `Virgem` )
         {
             img.src = `image/virgo.png`
+            img.alt = `imagem signo de virgem`
             res.innerHTML = `virgem`
         }
         else if ( signo == `Libra` )
         {
             img.src = `image/libra-200px.png`
-            res.innerHTML = `libra`
+            img.alt = `imagem signo de libra`
+
+            res.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel similique temporibus ipsa autem ad illo quia maxime ipsum aliquam, amet, doloribus id fugiat! Similique dolorem at cupiditate earum explicabo. Enim?</p>`
         }
         else if ( signo == `Escorpião` )
         {
             img.src = `image/scorpio.png`
+            img.alt = `imagem signo de escorpião`
             res.innerHTML = `escorpião`
         }
         else if ( signo == `Sagitário` )
         {
             img.src = `image/sagittarius.png`
+            img.alt = `imagem signo de sagitário`
             res.innerHTML = `sagitário`
         }
     })
