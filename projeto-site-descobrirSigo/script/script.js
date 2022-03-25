@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     function calcularSigno(dia, mes)
     {
-        let zodiaco =['', 'Capricórnio', 'Aquário', 'Peixes', 'Áries', 'Touro', 'Gêmeos', 'Câncer', 'Leão', 'Virgem', 'Libra', 'Escorpião', 'Sagitario', 'Capricórnio']
+        let zodiaco =['', 'Capricórnio', 'Aquário', 'Peixes', 'Áries', 'Touro', 'Gêmeos', 'Câncer', 'Leão', 'Virgem', 'Libra', 'Escorpião', 'Sagitário', 'Capricórnio']
         let ultimoDia =['', 19, 18, 20, 20, 21, 21, 22, 22, 21, 22, 21, 20, 19]
         return (dia > ultimoDia[mes]) ? zodiaco[mes + 1] : zodiaco[mes]
     }
@@ -32,11 +32,47 @@ $(document).ready(function(){
         else if ( signo == `Áries` )
         {
             img.src = `image/aries.png`
+            res.innerHTML = `áries`
         }
         else if ( signo == `Touro` )
         {
             img.src = `image/taurus.png`
             res.innerHTML = `touro`
+        }
+        else if ( signo == `Gêmeos` )
+        {
+            img.src = `image/gemini.png`
+            res.innerHTML = `Gêmeos`
+        }
+        else if ( signo == `Câncer` )
+        {
+            img.src = `image/cancer.png`
+            res.innerHTML = `câncer`
+        }
+        else if ( signo == `Leão` )
+        {
+            img.src = `image/leo.png`
+            res.innerHTML = `leão`
+        }
+        else if ( signo == `Virgem` )
+        {
+            img.src = `image/virgo.png`
+            res.innerHTML = `virgem`
+        }
+        else if ( signo == `Libra` )
+        {
+            img.src = `image/libra-200px.png`
+            res.innerHTML = `libra`
+        }
+        else if ( signo == `Escorpião` )
+        {
+            img.src = `image/scorpio.png`
+            res.innerHTML = `escorpião`
+        }
+        else if ( signo == `Sagitário` )
+        {
+            img.src = `image/sagittarius.png`
+            res.innerHTML = `sagitário`
         }
     })
 })
