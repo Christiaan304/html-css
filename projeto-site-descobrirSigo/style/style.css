@@ -17,6 +17,8 @@
 p
 {
     text-align: justify;
+    font-size: 1.1em;
+    padding-top: 20px;
 }
 
 body
@@ -45,12 +47,6 @@ section
     border-radius: 0px 0px 10px 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.33);
     padding: 10px 10px;
-}
-
-section > p
-{
-    font-size: 1.1em;
-    padding-top: 20px;
 }
 
 #img, #res
