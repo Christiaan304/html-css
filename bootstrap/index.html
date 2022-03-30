@@ -9,29 +9,39 @@
     <title>usando bootstrap</title>
 </head>
 <body>
+    <!--
     <header class="container-fluid pt-4 bg-dark text-white text-center">
         <h1>Titulo</h1>
     </header>
+    -->
 
-    <nav class="container">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">Notícias</a>
-            </li>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">Esportes</a>
-            </li>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">Saúde</a>    
-            </li>
-        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Esportes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Saúde</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    
 
     <section class="container">
         <div class="container pt-4">
@@ -110,7 +120,7 @@
         </div>
     </section>
 
-    <footer class="container-fluid pt-4 text-center">
+    <footer class="container-fluid pt-5 text-center">
         <a href="https://github.com/Christiaan304">&#169; Christiaan</a>
     </footer>
 </body>
