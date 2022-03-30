@@ -1,0 +1,11 @@
+a
+{
+    text-decoration: none;
+    color: var(--bs-red);
+}
+
+footer > div > a:hover
+{
+    text-decoration: underline;
+    color: var(--bs-red);
+}

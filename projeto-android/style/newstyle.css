@@ -1,0 +1,46 @@
+body
+{
+    background-color: var(--bs-teal);
+}
+
+header > p
+{
+    margin-bottom: 0px;
+}
+
+nav
+{
+    padding-top: 10px;
+}
+
+main
+{
+    background-color: white;
+}
+
+
+aside{
+    
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+aside > h3{
+    background-color: var(--bs-dark);
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+}
+
+aside > ul{
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: '\2714\00a0';
+}
+
+#ultimop
+{
+    margin-bottom: 0px;
+}
