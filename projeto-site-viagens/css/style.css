@@ -6,11 +6,17 @@ h1,h2,h3
 #nav
 {
     box-shadow: 0px 0px 5px black;
+    background-color: rgba(128, 128, 128, 0.05);
 }
 
 .navbar-brand
 {
     margin-right: 100px;
+}
+
+main, footer
+{
+    background-color: white;
 }
 
 #sobre
