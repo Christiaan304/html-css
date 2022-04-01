@@ -19,6 +19,11 @@ main, footer
     background-color: white;
 }
 
+.card
+{
+    width: 300px;
+}
+
 #sobre
 {
     background-color: rgba(128, 128, 128, 0.07);
