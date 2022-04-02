@@ -23,18 +23,11 @@ main, footer
 
 div.card
 {
-    width: 300px;
-    margin-left: 10px;
+    width: 360px;
 }
 
 #sobre
 {
     background-color: rgba(128, 128, 128, 0.07);
     border-radius: 5px;
-}
-
-ul
-{
-    list-style: none;
-    padding: 0px;
 }
