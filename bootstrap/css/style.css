@@ -1,16 +1,27 @@
+/*
 *
 {
     box-shadow: inset 0px 0px 3px rgba(255, 0, 0, 0.7);
 }
+*/
 
 a
 {
     text-decoration: none;
-    color: var(--bs-red);
 }
 
 footer > div > a:hover
 {
     text-decoration: underline;
     color: var(--bs-red);
+}
+
+.btn-primary {
+    background-color: #a1fd0d !important;
+    border-color: #fd0d0d !important;
+}
+
+.btn-primary:hover {
+    background-color: #0d4dfd !important;
+    border-color: #21fd0d !important;
 }
