@@ -1,0 +1,30 @@
+.navbar-brand {
+    margin-right: 50px !important;
+}
+
+.nav-link:hover
+{
+    background-color: rgba(213, 38, 0) !important;
+    color: white !important;
+}
+
+.btn-primary {
+    background-color: #e97c00 !important;
+    border-color: #e97c00 !important;
+}
+
+.card
+{
+    background-color: rgb(48, 48, 48) !important;
+}
+
+body
+{
+    background-color: #222222 !important;
+}
+
+h2
+{
+    font-weight: bolder;
+    color: rgb(249, 4, 4) ;
+}
