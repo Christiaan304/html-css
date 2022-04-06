@@ -24,8 +24,12 @@ function calcular()
     var entropy = Math.pow(Number(massa.value) * constantes.massa_solar, 2) * ( (4 * Math.PI * constantes.G) / ( constantes.hbar * constantes.c ) )
     res_entropy.innerHTML += `${entropy}`
 
+    res_temperature.innerHTML = ``
+    var temperature = ( 1 / (Number(massa.value) * constantes.massa_solar) ) * ( (constantes.hbar * Math.pow(constantes.c, 3)) / (8 * Math.PI * constantes.k * constantes.G) )
+    res_temperature.innerHTML += `${temperature}`
+
     res_luminosity.innerHTML = ``
-    var luminosity = Math.pow(constantes.hbar * constantes.c, 6) / ( 15360 * Math.PI * Math.pow(constantes.G, 2) * Number(massa.value) * constantes.massa_solar )
+    var luminosity = ( constantes.hbar * Math.pow( constantes.c, 6 ) ) / ( Math.pow( Number(massa.value) * constantes.massa_solar, 2 ) * 15360 * Math.PI * Math.pow( constantes.G, 2 ) )
     res_luminosity.innerHTML += `${luminosity}`    
 }
 
@@ -34,7 +38,7 @@ function get_rad()
     var select = document.querySelector(`select#rad_unit`)
     var value = select.options[select.selectedIndex].value
 
-    var raio = Number(massa.value) * constantes.massa_solar * ( (2 * constantes.G) / Math.pow(constantes.c, 2) )
+    var raio = (( 2 * constantes.G * Number(massa.value) * constantes.massa_solar ) / Math.pow( constantes.c, 2 )).toFixed(5)
 
     res_rs.innerHTML = ``
 
@@ -44,12 +48,12 @@ function get_rad()
     }
     else if ( value == `km` )
     {
-        var raio_km = raio / 1e3
+        var raio_km = (raio / 1e3).toFixed(5)
         res_rs.innerHTML += `${raio_km}`
     }
     else if ( value == `au` )
     {
-        var raio_au = raio / constantes.au
+        var raio_au = (raio / constantes.au).toFixed(5)
         res_rs.innerHTML += `${raio_au}`
     }
 }
@@ -59,9 +63,8 @@ function get_surface()
     var select = document.querySelector(`select#surface_unit`)
     var value = select.options[select.selectedIndex].value
 
-    var surface_area = (16 * Math.PI * Math.pow(constantes.G, 2) * Math.pow(Number(massa.value) * constantes.massa_solar, 2) ) / (constantes.c ** 4)
-    var surface_area_km2 = surface_area / 1e6
-
+    var surface_area = ((16 * Math.PI * Math.pow(constantes.G, 2) * Math.pow(Number(massa.value) * constantes.massa_solar, 2) ) / (constantes.c ** 4)).toFixed(5)
+    
     res_as.innerHTML = ``
 
     if ( value == `m2` )
@@ -70,6 +73,7 @@ function get_surface()
     }
     else if ( value == `km2` )
     {
+        var surface_area_km2 = (surface_area / 1e6).toFixed(5)
         res_as.innerHTML += `${surface_area_km2}`
     }
 }
@@ -79,7 +83,7 @@ function get_gravity()
     var select = document.querySelector(`select#gravity_unit`)
     var value = select.options[select.selectedIndex].value
 
-    var surface_gravity = ( Math.pow(constantes.c, 4) ) / ( 4 * ( Number(massa.value) * constantes.massa_solar ) * constantes.G )
+    var surface_gravity = (( Math.pow(constantes.c, 4) ) / ( 4 * ( Number(massa.value) * constantes.massa_solar ) * constantes.G )).toFixed(4)
 
     res_gs.innerHTML = ``
 
@@ -89,7 +93,7 @@ function get_gravity()
     }
     else if ( value == `earth` )
     {
-        var surface_gravity_earth = surface_gravity / 9.806
+        var surface_gravity_earth = (surface_gravity / 9.806).toFixed(4)
         res_gs.innerHTML += `${surface_gravity_earth}`
     }
 }
@@ -112,31 +116,6 @@ function get_time()
         var days = seconds / 86400
         res_ts.innerHTML += `${days}`
     }
-    else if ( value == `years` )
-    {
-        var years = seconds / 31536000
-        res_ts.innerHTML += `${years}`
-    }
-}
-
-function get_temperature()
-{
-    var select = document.querySelector(`select#temperature`)
-    var value = select.options[select.selectedIndex].value
-
-    var temperature = ( 1 / (Number(massa.value) * constantes.massa_solar) ) * ( (constantes.hbar * Math.pow(constantes.c, 3)) / (8 * Math.PI * constantes.k * constantes.G) )
-
-    res_temperature.innerHTML = ``
-
-    if ( value == `celsius` )
-    {
-        res_temperature.innerHTML += `${temperature}`
-    }
-    else if ( value == `kelvin` )
-    {
-        var kelvin = temperature * 273.15
-        res_temperature.innerHTML += `${kelvin}`
-    }
 }
 
 function get_lifetime()
@@ -144,7 +123,7 @@ function get_lifetime()
     var select = document.querySelector(`select#lifetime`)
     var value = select.options[select.selectedIndex].value
 
-    var lifetime = Math.pow( Number(massa.value), 3 ) * ( (5120 * Math.PI * Math.pow(constantes.G, 2) ) / 1.8083 * constantes.hbar * Math.pow(constantes.c, 4) )
+    var lifetime = ( Math.pow( Number(massa.value) * constantes.massa_solar, 3 ) * 5120 * Math.PI * Math.pow( constantes.G, 2 ) ) / ( 1.8080 * constantes.hbar * Math.pow( constantes.c, 4 ) )
 
     res_time.innerHTML = ``
 

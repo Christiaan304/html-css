@@ -38,7 +38,7 @@
                 <tbody>
                     <tr>
                         <td scope="row">Massa</td>
-                        <td><input type="text" name="massa_txt" id="massa_txt" onchange="calcular(), get_rad(), get_surface(), get_gravity(), get_time(), get_temperature(), get_lifetime()"></td>
+                        <td><input type="text" name="massa_txt" id="massa_txt" onchange="calcular(), get_rad(), get_surface(), get_gravity(), get_time(), get_lifetime()"></td>
                         <td>Massa Solar</td>
                     </tr>
 
@@ -95,7 +95,6 @@
                             <select id="time_unity" onchange="get_time()">
                                 <option value="second">s</option>
                                 <option value="days">dias</option>
-                                <option value="years">anos</option>
                             </select>
                         </td>
                     </tr>
@@ -108,13 +107,8 @@
 
                     <tr>
                         <td scope="row">Temperatura</td>
-                        <td id="res_temperature" class="limpar"></td>
-                        <td>
-                            <select id="temperature" onchange="get_temperature()">
-                                <option value="celsius">°C</option>
-                                <option value="kelvin">K</option>   
-                            </select>
-                        </td>
+                        <td id="res_temperature"></td>
+                        <td>Kelvin</td>
                     </tr>
 
                     <tr>
@@ -129,7 +123,7 @@
                         <td>
                             <select id="lifetime" onchange="get_lifetime()">
                                 <option value="seconds">s</option>
-                                <option value="Gyears">bilhao anos</option>
+                                <option value="Gyears">bilhão anos</option>
                             </select>
                         </td>
                     </tr>
