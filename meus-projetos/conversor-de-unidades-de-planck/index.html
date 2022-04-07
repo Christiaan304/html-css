@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,247 @@
     <link rel="stylesheet" href="./style/index.css">
     <title>Plack Units Converter</title>
 </head>
+
 <body>
     <div class="container">
+
+        <!-- kg to planck mass -->
         <div class="row">
-            <div class="col-sm-6 bg-danger">a</div>
-            <div class="col-sm-6 bg-warning">b</div>
+
+            <div class="col-sm-6 text-center my-5">
+                <h2>Kg to Planck mass</h2>
+                <div class="card bg-light">
+                    <div class="card-body">
+
+                        <div class="table-responsive">
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><input type="text" id="kilogram"></td>
+                                        <td><strong>kg</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="resPm"></td>
+                                        <td><strong>Planck mass</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <button type="button" class="btn btn-secondary mt-3" onclick="kilogramToPlanckMass()">Convert</button>
+                        <button type="button" class="btn btn-secondary mt-3">Clean</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 text-center my-5">
+                <h2>Plack Mass to kg</h2>
+                <div class="card bg-light">
+                    <div class="card-body">
+
+                        <div class="table-responsive">
+
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><input type="text" id="planckMass"></td>
+                                        <td><strong>Planck mass</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="resKg"></td>
+                                        <td><strong>kg</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <button type="button" class="btn btn-secondary mt-3" onclick="planckMassToKilogram()">Convert</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+        <!-- meters to planck length -->
+        <div class="row">
+
+            <div class="col-sm-6 text-center my-5">
+                <h2>Meters to Planck Length</h2>
+                <div class="card bg-light">
+                    <div class="card-body">
+
+                        <div class="table-responsive">
+
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><input type="text" id="meters"></td>
+                                        <td><strong>meters</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="resPlanckLength"></td>
+                                        <td><strong>Plack Length</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <button type="button" class="btn btn-secondary mt-3" onclick="metersToPlancklength()">Convert</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 text-center my-5">
+                <h2>Plack Length to meters</h2>
+                <div class="card bg-light">
+                    <div class="card-body">
+
+                        <div class="table-responsive">
+
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><input type="text" id="planckLength"></td>
+                                        <td><strong>Plack Length</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="resMeters"></td>
+                                        <td><strong>meters</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <button type="button" class="btn btn-secondary mt-3" onclick="planckLengthToMeters()">Convert</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- seconds to planck time -->
+        <div class="row">
+
+            <div class="col-sm-6 text-center my-5">
+                <h2>Seconds to Planck Time</h2>
+                <div class="card bg-light">
+                    <div class="card-body">
+
+                        <div class="table-responsive">
+
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><input type="text" id="seconds"></td>
+                                        <td><strong>seconds</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="resPlanckTime"></td>
+                                        <td><strong>Plack Time</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <button type="button" class="btn btn-secondary mt-3" onclick="secondToPlanckTime()">Convert</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 text-center my-5">
+                <h2>Planck Time to seconds</h2>
+                <div class="card bg-light">
+                    <div class="card-body">
+
+                        <div class="table-responsive">
+
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><input type="text" id="planckTime"></td>
+                                        <td><strong>Plack Time</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="resSeconds"></td>
+                                        <td><strong>seconds</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <button type="button" class="btn btn-secondary mt-3" onclick="planckTimeToSecond()">Convert</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--
+         //kelvin to plack temperature//
+        <div class="row">
+
+            <div class="col-sm-6 text-center my-5">
+                <h2>Kelvin to Planck temperature</h2>
+                <div class="card bg-light">
+                    <div class="card-body">
+
+                        <div class="table-responsive">
+
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><input type="text" id="kelvin"></td>
+                                        <td><strong>kelvin</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><strong>Plack Temperature</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <button type="button" class="btn btn-secondary mt-3" onclick="kToPtemp()">Convert</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 text-center my-5">
+                <h2>Plack temperature to Kelvin</h2>
+                <div class="card bg-light">
+                    <div class="card-body">
+
+                        <div class="table-responsive">
+
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><input type="text" id="planckTemp"></td>
+                                        <td><strong>Planck Temperature</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><strong>Kelvin</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <button type="button" class="btn btn-secondary mt-3" onclick="PtempToK()">Convert</button>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
     </div>
 </body>
+
+
 </html>
