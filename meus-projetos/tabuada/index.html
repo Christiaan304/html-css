@@ -11,7 +11,6 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
         defer></script>
 
-    <!-- js -->
     <script>
         function calcular()
         {
@@ -19,9 +18,16 @@
 
             let numero = Number(document.querySelector(`input#numero`).value)
 
-            for(let i = 0; i <= 10; i++)
+            if(isNaN(numero))
             {
-                res.innerHTML += `<h3>${numero} * ${i} = ${numero * i}</h3>`
+                alert(`Digite somente numeros`)
+            }
+            else
+            {
+                for(let i = 0; i <= 10; i++)
+                {
+                    res.innerHTML += `<h3>${numero} x ${i} = ${numero * i}</h3>`
+                }
             }
         }
     </script>
