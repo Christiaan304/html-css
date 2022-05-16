@@ -9,7 +9,7 @@ function update()
     switch(value)
     { 
         case 1:
-            img.src = `../../images/sun.jpg`
+            img.src = `../images/sun.jpg`
             img.alt = `imgaem do sol`
 
             information.innerHTML = `<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ipsam officia, nam deleniti earum
