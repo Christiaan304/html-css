@@ -3,7 +3,9 @@ resumo = {
 
     mercury:`<p><span class="fw-bold">Mercúrio</span> é o menor e o primeiro planeta do Sistema Solar, orbitando o Sol a cada 87,97 dias terrestres e demora 56,64 dias para completar uma volta no seu eixo. Tem uma aparência similar à da Lua com crateras de impacto e planícies lisas, não possui satélites naturais e atmosfera, a temperatura em sua superfície varia de −183 °C a 427 °C.</p>`,
 
-    venus:`<p><span class="fw-bold">Vênus</span> é o segundo planeta do Sistema Solar em ordem de distância a partir do Sol, orbitando a cada 224,7 dias. Recebeu seu nome em homenagem à deusa romana do amor e da beleza Vénus, equivalente a Afrodite. Depois da Lua, é o objeto mais brilhante do céu noturno, é considerado um planeta do tipo terrestre ou telúrico, chamado com frequência de planeta irmão da Terra, já que são similares quanto ao tamanho, massa e composição. Vénus é coberto por uma camada opaca de nuvens de ácido sulfúrico altamente reflexivas, impedindo que a sua superfície seja vista do espaço na luz visível. Ele possui a mais densa atmosfera entre todos os planetas terrestres do Sistema Solar, constituída principalmente de dióxido de carbono e a pressão atmosférica na superfície do planeta é 92 vezes a da Terra.</p>`
+    venus:`<p><span class="fw-bold">Vênus</span> é o segundo planeta do Sistema Solar em ordem de distância a partir do Sol, orbitando a cada 224,7 dias. Recebeu seu nome em homenagem à deusa romana do amor e da beleza Vénus, equivalente a Afrodite. Depois da Lua, é o objeto mais brilhante do céu noturno, é considerado um planeta do tipo terrestre ou telúrico, chamado com frequência de planeta irmão da Terra, já que são similares quanto ao tamanho, massa e composição. Vénus é coberto por uma camada opaca de nuvens de ácido sulfúrico altamente reflexivas, impedindo que a sua superfície seja vista do espaço na luz visível. Ele possui a mais densa atmosfera entre todos os planetas terrestres do Sistema Solar, constituída principalmente de dióxido de carbono e a pressão atmosférica na superfície do planeta é 92 vezes a da Terra.</p>`,
+
+    earth:`<p>A <span class="fw-bold">Terra</span> é o terceiro planeta mais próximo do Sol, o mais denso e o quinto maior dos oito planetas do Sistema Solar,  orbita o Sol a cada 365,2 dias, e é o único corpo celeste onde é conhecida a existência de vida. A sua superfície exterior está dividida em vários segmentos rígidos, chamados placas tectônicas, que migram sobre a superfície terrestre ao longo de milhões de anos. Cerca de 71% da superfície da Terra está coberta por oceanos de água salgada, com o restante consistindo de continentes e ilhas. O eixo de rotação da Terra possui uma inclinação de 23,4°, produzindo as estações do ano. A Lua é o único satélite natural conhecido da Terra, é responsável pelas marés, estabiliza a inclinação axial da Terra e desacelera gradualmente a rotação do planeta.</p>`
 }
 
 function update() 
@@ -38,7 +40,7 @@ function update()
             img.src = `./images/earth.jpg`
             img.alt = `imgaem do planeta terra`
 
-            information.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint ex, inventore nesciunt aut modi explicabo repudiandae, vel beatae quo cumque ducimus adipisci. Officiis velit exercitationem hic, aliquam numquam nemo asperiores?</p>`
+            information.innerHTML = resumo.earth
         break
 
         case 5:
