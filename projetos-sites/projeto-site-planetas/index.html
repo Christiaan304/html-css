@@ -12,8 +12,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <title>Planetas</title>
@@ -26,24 +24,26 @@
     </header>
 
     <main class="container">
-        <select id="solarSystemObjects" class="form-select" onchange="update()">
-            <option selected>Selecione um Objeto do Sistema Solar</option>
-            <option value="1">Sol</option>
-            <option value="2">Mercúrio</option>
-            <option value="3">Vênus</option>
-            <option value="4">Terra</option>
-            <option value="5">Lua</option>
-            <option value="6">Marte</option>
-            <option value="7">Cinturão de Asteróides</option>
-            <option value="8">Vesta</option>
-            <option value="9">Ceres</option>
-            <option value="10">Júpiter</option>
-            <option value="11">Saturno</option>
-            <option value="12">Urano</option>
-            <option value="13">Netuno</option>
-            <option value="14">Plutão</option>
-            <option value="15">Nuvem de Oort</option>
-        </select>
+        <section id="select">
+            <select id="solarSystemObjects" class="form-select" onchange="update()">
+                <option selected>Selecione um Objeto do Sistema Solar</option>
+                <option value="1">Sol</option>
+                <option value="2">Mercúrio</option>
+                <option value="3">Vênus</option>
+                <option value="4">Terra</option>
+                <option value="5">Lua</option>
+                <option value="6">Marte</option>
+                <option value="7">Cinturão de Asteróides</option>
+                <option value="8">Vesta</option>
+                <option value="9">Ceres</option>
+                <option value="10">Júpiter</option>
+                <option value="11">Saturno</option>
+                <option value="12">Urano</option>
+                <option value="13">Netuno</option>
+                <option value="14">Plutão</option>
+                <option value="15">Nuvem de Oort</option>
+            </select>
+        </section>
 
         <section id="imageContainer" class="text-center my-5">
             <div class="container">
