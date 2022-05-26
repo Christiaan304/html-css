@@ -11,7 +11,9 @@ resumo = {
 
     mars:`<p><span class="fw-bold">Marte</span> é o quarto planeta a partir do Sol, também conhecido como o "Planeta Vermelho", porque o óxido de ferro predominante em sua superfície lhe dá uma aparência avermelhada, orbita o Sol a cada 687 dias (1,8 anos). <span class="fw-bold">Marte</span> possui uma atmosfera fina, crateras de impacto na superficie, vulcões adormecidos, vales, desertos e calotas polares. O período de rotação de 24 horas e 39 minutos, estações do ano, e inclinação do eixo de 25,2° são parecidos com a Terra. É la que se encontra a maior montanha do Sistema Solar, o Monte Olimpo com 22 km de altura, contra 8,8 km do Monte Everest. Possui duas luas, Fobos e Deimos, são pequenas rochas que podem ser asteroides capturados.</p>`,
 
-    asteroidBelt:`<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint ex, inventore nesciunt aut modi explicabo repudiandae, vel beatae quo cumque ducimus adipisci. Officiis velit exercitationem hic, aliquam numquam nemo asperiores?</p>`
+    asteroidBelt:`<p>O <span class="fw-bold">Cinturão de Asteroides</span> é uma região circular do Sistema Solar formada por pequenos asteroides, sua composição pode variar entre carbono e silicio e metais como ferro e niquel, está localizada entre Marte e Júpiter. Os maiores obejetos do cinturão são <a href="https://pt.wikipedia.org/wiki/Ceres_(planeta_an%C3%A3o)" target="_blank">Ceres</a>, <a href="https://pt.wikipedia.org/wiki/4_Vesta" target="_blank">Vesta</a>, <a href="https://pt.wikipedia.org/wiki/2_Palas" target="_blank">Palas</a> e <a href="https://pt.wikipedia.org/wiki/10_H%C3%ADgia" target="_blank">Hígia</a>. O cinturão se formou na <a href="https://pt.wikipedia.org/wiki/Nebulosa_protossolar" target="_blank">nebulosa solar</a> com o restante do Sistema Solar, e os asteroides que estavam nesse região formaram um planeta, mas as perturbações gravitacionais de Júpiter, que é o planeta mais massivo, fizeram com que estes fragmentos colidissem entre si a grandes velocidades e não pudessem se agrupar, criando o cinturão.</p>`,
+
+    vesta: `<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint ex, inventore nesciunt aut modi explicabo repudiandae, vel beatae quo cumque ducimus adipisci. Officiis velit exercitationem hic, aliquam numquam nemo asperiores?</p>`
 }
 
 function update() 
@@ -73,7 +75,7 @@ function update()
             img.src = `./images/vesta.jpg`
             img.alt = `imgaem do planeta anão vesta`
 
-            information.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint ex, inventore nesciunt aut modi explicabo repudiandae, vel beatae quo cumque ducimus adipisci. Officiis velit exercitationem hic, aliquam numquam nemo asperiores?</p>`
+            information.innerHTML = resumo.vesta
         break
 
         case 9:
