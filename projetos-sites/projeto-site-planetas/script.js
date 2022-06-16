@@ -20,6 +20,8 @@ resumo = {
     jupiter: `<p>Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa, e é o quinto mais próximo do Sol e possui o período rotacional mais curto entre os planetas. É um planeta gasoso, junto com Saturno, Urano e Netuno. Seu período orbital é 11,86 anos terrestres e sua rotção é de 9,8 horas.</p>`,
 
     saturn: `<p>Saturno é o segundo maior planeta do Sistema Solar, e o quinto mais próximo do Sol. É um planeta gasoso, junto com Júpiter, Urano e Netuno. Sua rotação é de 10,4 horas e o período orbital é 29,5 anos terrestres.</p>`,
+
+    uranus: `<p></p>`,
 }
 
 function update() 
@@ -109,7 +111,7 @@ function update()
             img.src = `./images/uranus.jpg`
             img.alt = `imgaem do planeta urano`
 
-            information.innerHTML = `<p></p>`
+            information.innerHTML = resumo.uranus
         break
 
         case 13:
