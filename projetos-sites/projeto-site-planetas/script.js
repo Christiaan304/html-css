@@ -15,9 +15,11 @@ resumo = {
 
     vesta: `<p><span class="fw-bold">Vesta</span> é o segundo maior asteroide do Sistema Solar, está localizado no cinturão de asteroides e tem um diâmetro de 530 km. Foi descoberto por <a href="https://pt.wikipedia.org/wiki/Heinrich_Wilhelm_Olbers" target="_blank">Heinrich Wilhelm Olbers</a> em 29 de março de 1807 e tem o nome da deusa romana Vesta. </p>`,
 
-    ceres:`<p><span class="fw-bold">Ceres</span> é um planeta anão localizado no cinturão de asteroides, sendo o maior dos asteroides. Foi descoberto por <a href="https://pt.wikipedia.org/wiki/Giuseppe_Piazzi" target="_blank">Giuseppe Piazzi</a> em 1801. Possui um formato arredondado e uma superfície escura cheia de crateras. É constituído possivelmente por um núcleo rochoso circundado por um manto de gelo. Sua superfície, conforme anteriormente observado pelo Telescópio Espacial Hubble, apresenta regiões mais escuras, além de locais de brilho proeminente, de natureza ainda desconhecida.</p>`
+    ceres:`<p><span class="fw-bold">Ceres</span> é um planeta anão localizado no cinturão de asteroides, sendo o maior dos asteroides. Foi descoberto por <a href="https://pt.wikipedia.org/wiki/Giuseppe_Piazzi" target="_blank">Giuseppe Piazzi</a> em 1801. Possui um formato arredondado e uma superfície escura cheia de crateras. É constituído possivelmente por um núcleo rochoso circundado por um manto de gelo. Sua superfície, conforme anteriormente observado pelo Telescópio Espacial Hubble, apresenta regiões mais escuras, além de locais de brilho proeminente, de natureza ainda desconhecida.</p>`,
 
+    jupiter: `<p>Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa, e é o quinto mais próximo do Sol e possui o período rotacional mais curto entre os planetas. É um planeta gasoso, junto com Saturno, Urano e Netuno. Seu período orbital é 11,86 anos terrestres e sua rotção é de 9,8 horas.</p>`,
 
+    saturn: `<p>Saturno é o segundo maior planeta do Sistema Solar, e o quinto mais próximo do Sol. É um planeta gasoso, junto com Júpiter, Urano e Netuno. Sua rotação é de 10,4 horas e o período orbital é 29,5 anos terrestres.</p>`,
 }
 
 function update() 
@@ -93,14 +95,14 @@ function update()
             img.src = `./images/jupiter.jpg`
             img.alt = `imgaem do planeta júpiter`
 
-            information.innerHTML = `<p>Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa, e é o quinto mais próximo do Sol e possui o período rotacional mais curto entre os planetas. É um planeta gasoso, junto com Saturno, Urano e Netuno. Seu período orbital é 11,86 anos terrestres e sua rotção é de 9,8 horas.</p>`
+            information.innerHTML = resumo.jupiter
         break
 
         case 11:
             img.src = `./images/saturn.jpg`
             img.alt = `imgaem do planeta saturno`
 
-            information.innerHTML = `<p>Saturno é o sexto planeta a partir do Sol e o segundo maior do Sistema Solar atrás de Júpiter. Seu período orbital é de 29,4 anos terrestres e a rotção de 10 horas e meia, está a uma distância de 9,6 unidades astronômicas do sol ou 9,6 vezes a distâcia da Terra té o sol. </p>`
+            information.innerHTML = resumo.saturn
         break
 
         case 12:
