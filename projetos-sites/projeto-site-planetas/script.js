@@ -16,6 +16,8 @@ resumo = {
     vesta: `<p><span class="fw-bold">Vesta</span> é o segundo maior asteroide do Sistema Solar, está localizado no cinturão de asteroides e tem um diâmetro de 530 km. Foi descoberto por <a href="https://pt.wikipedia.org/wiki/Heinrich_Wilhelm_Olbers" target="_blank">Heinrich Wilhelm Olbers</a> em 29 de março de 1807 e tem o nome da deusa romana Vesta. </p>`,
 
     ceres:`<p><span class="fw-bold">Ceres</span> é um planeta anão localizado no cinturão de asteroides, sendo o maior dos asteroides. Foi descoberto por <a href="https://pt.wikipedia.org/wiki/Giuseppe_Piazzi" target="_blank">Giuseppe Piazzi</a> em 1801. Possui um formato arredondado e uma superfície escura cheia de crateras. É constituído possivelmente por um núcleo rochoso circundado por um manto de gelo. Sua superfície, conforme anteriormente observado pelo Telescópio Espacial Hubble, apresenta regiões mais escuras, além de locais de brilho proeminente, de natureza ainda desconhecida.</p>`
+
+
 }
 
 function update() 
@@ -91,7 +93,7 @@ function update()
             img.src = `./images/jupiter.jpg`
             img.alt = `imgaem do planeta júpiter`
 
-            information.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint ex, inventore nesciunt aut modi explicabo repudiandae, vel beatae quo cumque ducimus adipisci. Officiis velit exercitationem hic, aliquam numquam nemo asperiores?</p>`
+            information.innerHTML = `<p>ipsum dolor sit amet consectetur, adipisicing elit. Sint ex, inventore nesciunt aut modi explicabo repudiandae, vel beatae quo cumque ducimus adipisci. Officiis velit exercitationem hic, aliquam numquam nemo asperiores?</p>`
         break
 
         case 11:
