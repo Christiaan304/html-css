@@ -23,21 +23,19 @@ resumo = {
 
     uranus: `<p><span class="fw-bold">Urano</span> é o sétimo planeta a partir do Sol, o terceiro maior e o quarto mais massivo dos oito planetas do Sistema Solar, seu eixo de rotação é inclinado em 90 graus, parecendo que o planeta está deitado. Sua rotação é de 17 horas e 14 minutos e o período orbital de 84 anos. </p>`,
 
-    neptune: `<p><span class="fw-bold">Netuno</span> </p>`,
+    neptune: `<p><span class="fw-bold">Netuno</span>  é o oitavo planeta do Sistema Solar, o último a partir do Sol desde a reclassificação de Plutão para a categoria de planeta anão, em 2006. Sua rotação é de 16 horas e 6 minutos e o período orbital de 164,8 anos terrestres.</p>`,
 
     pluto: `<p><span class="fw-bold">Plutão</span> </p>`,
 }
 
-function update() 
-{
+function update() {
     let select = document.querySelector(`#solarSystemObjects`)
     let value = Number(select.options[select.selectedIndex].value)
 
     let img = document.querySelector(`#image`)
     let information = document.querySelector(`#information`)
 
-    switch(value)
-    { 
+    switch(value) { 
         case 1:
             img.src = `./images/sun.jpg`
             img.alt = `imgaem do sol`
