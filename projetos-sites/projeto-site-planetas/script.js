@@ -93,23 +93,21 @@ function update()
             img.src = `./images/jupiter.jpg`
             img.alt = `imgaem do planeta júpiter`
 
-            information.innerHTML = `<p>ipsum dolor sit amet consectetur, adipisicing elit. Sint ex, inventore nesciunt aut modi explicabo repudiandae, vel beatae quo cumque ducimus adipisci. Officiis velit exercitationem hic, aliquam numquam nemo asperiores?</p>`
+            information.innerHTML = `<p>Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa, e é o quinto mais próximo do Sol e possui o período rotacional mais curto entre os planetas. É um planeta gasoso, junto com Saturno, Urano e Netuno. Seu período orbital é 11,86 anos terrestres e sua rotção é de 9,8 horas.</p>`
         break
 
         case 11:
             img.src = `./images/saturn.jpg`
             img.alt = `imgaem do planeta saturno`
 
-            information.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita unde natus explicabo tenetur rem dolorem, inventore quo saepe ipsa nobis laudantium labore possimus, quod blanditiis. Fuga tempora distinctio saepe voluptatibus.
-            Odit quas laboriosam repellat labore? Nisi, repudiandae. Quasi odio quod rerum sunt laborum repudiandae eligendi sed sapiente illo facilis blanditiis iusto, iste reiciendis ratione magnam officiis aliquid incidunt nulla harum.</p>`
+            information.innerHTML = `<p>Saturno é o sexto planeta a partir do Sol e o segundo maior do Sistema Solar atrás de Júpiter. Seu período orbital é de 29,4 anos terrestres e a rotção de 10 horas e meia, está a uma distância de 9,6 unidades astronômicas do sol ou 9,6 vezes a distâcia da Terra té o sol. </p>`
         break
 
         case 12:
             img.src = `./images/uranus.jpg`
             img.alt = `imgaem do planeta urano`
 
-            information.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita unde natus explicabo tenetur rem dolorem, inventore quo saepe ipsa nobis laudantium labore possimus, quod blanditiis. Fuga tempora distinctio saepe voluptatibus.
-            Odit quas laboriosam repellat labore? Nisi, repudiandae. Quasi odio quod rerum sunt laborum repudiandae eligendi sed sapiente illo facilis blanditiis iusto, iste reiciendis ratione magnam officiis aliquid incidunt nulla harum.</p>`
+            information.innerHTML = `<p></p>`
         break
 
         case 13:
