@@ -17,11 +17,15 @@ resumo = {
 
     ceres:`<p><span class="fw-bold">Ceres</span> é um planeta anão localizado no cinturão de asteroides, sendo o maior dos asteroides. Foi descoberto por <a href="https://pt.wikipedia.org/wiki/Giuseppe_Piazzi" target="_blank">Giuseppe Piazzi</a> em 1801. Possui um formato arredondado e uma superfície escura cheia de crateras. É constituído possivelmente por um núcleo rochoso circundado por um manto de gelo. Sua superfície, conforme anteriormente observado pelo Telescópio Espacial Hubble, apresenta regiões mais escuras, além de locais de brilho proeminente, de natureza ainda desconhecida.</p>`,
 
-    jupiter: `<p>Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa, e é o quinto mais próximo do Sol e possui o período rotacional mais curto entre os planetas. É um planeta gasoso, junto com Saturno, Urano e Netuno. Seu período orbital é 11,86 anos terrestres e sua rotção é de 9,8 horas.</p>`,
+    jupiter: `<p><span class="fw-bold">Júpiter</span> é o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa, e é o quinto mais próximo do Sol e possui o período rotacional mais curto entre os planetas. É um planeta gasoso, junto com Saturno, Urano e Netuno. Seu período orbital é 11,86 anos terrestres e sua rotção é de 9,8 horas.</p>`,
 
-    saturn: `<p>Saturno é o segundo maior planeta do Sistema Solar, e o quinto mais próximo do Sol. É um planeta gasoso, junto com Júpiter, Urano e Netuno. Sua rotação é de 10,4 horas e o período orbital é 29,5 anos terrestres.</p>`,
+    saturn: `<p><span class="fw-bold">Saturno</span> é o segundo maior planeta do Sistema Solar, e o quinto mais próximo do Sol. É um planeta gasoso, junto com Júpiter, Urano e Netuno. Sua rotação é de 10,4 horas e o período orbital é 29,5 anos terrestres.</p>`,
 
-    uranus: `<p></p>`,
+    uranus: `<p><span class="fw-bold">Urano</span> é o sétimo planeta a partir do Sol, o terceiro maior e o quarto mais massivo dos oito planetas do Sistema Solar, seu eixo de rotação é inclinado em 90 graus, parecendo que o planeta está deitado. Sua rotação é de 17 horas e 14 minutos e o período orbital de 84 anos. </p>`,
+
+    neptune: `<p><span class="fw-bold">Netuno</span> </p>`,
+
+    pluto: `<p><span class="fw-bold">Plutão</span> </p>`,
 }
 
 function update() 
@@ -118,16 +122,14 @@ function update()
             img.src = `./images/neptune.jpg`
             img.alt = `imgaem do planeta netuno`
 
-            information.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita unde natus explicabo tenetur rem dolorem, inventore quo saepe ipsa nobis laudantium labore possimus, quod blanditiis. Fuga tempora distinctio saepe voluptatibus.
-            Odit quas laboriosam repellat labore? Nisi, repudiandae. Quasi odio quod rerum sunt laborum repudiandae eligendi sed sapiente illo facilis blanditiis iusto, iste reiciendis ratione magnam officiis aliquid incidunt nulla harum.</p>`
+            information.innerHTML = resumo.neptune
         break
 
         case 14:
             img.src = `./images/pluto.jpg`
             img.alt = `imgaem do planeta anão plutão`
 
-            information.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita unde natus explicabo tenetur rem dolorem, inventore quo saepe ipsa nobis laudantium labore possimus, quod blanditiis. Fuga tempora distinctio saepe voluptatibus.
-            Odit quas laboriosam repellat labore? Nisi, repudiandae. Quasi odio quod rerum sunt laborum repudiandae eligendi sed sapiente illo facilis blanditiis iusto, iste reiciendis ratione magnam officiis aliquid incidunt nulla harum.</p>`
+            information.innerHTML = resumo.pluto
         break
     }
 }
